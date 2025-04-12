@@ -118,6 +118,22 @@
     text-decoration: underline;
   }
   
+  .intro-text {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
   
   
   
