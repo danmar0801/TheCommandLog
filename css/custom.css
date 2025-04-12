@@ -1,66 +1,123 @@
-
-body {
-    background-color: #f8f8f2;
-    color: #222;
-    font-family: 'Fira Code', monospace;
+:root {
+    --background: #f2ede8;
+    --foreground: #13102e;
+    --accent: #ff6d2e;
+    --font-size: 1rem;
+    --line-height: 1.54em;
   }
   
-a, .accent, .terminal-prompt {
-color: #ff7f11;
-}
-
-.terminal-nav {
-background-color: #f0f0e6;
-border-bottom: 2px solid #ff7f11;
-padding: 0.5rem 1rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.terminal-logo {
-display: flex;
-align-items: center;
-font-weight: bold;
-font-size: 1.2rem;
-}
-
-.terminal-card {
-background-color: #fff;
-border-left: 3px solid #ff7f11;
-padding: 1rem;
-margin-top: 1.5rem;
-}
-
-.btn {
-display: inline-block;
-padding: 0.5em 1em;
-margin-right: 0.5em;
-border: 2px solid #ff7f11;
-color: #ff7f11;
-background: transparent;
-border-radius: 6px;
-text-decoration: none;
-font-weight: bold;
-transition: all 0.2s ease-in-out;
-}
-
-.btn:hover {
-background: #ff7f11;
-color: #fff;
-}
-.terminal-menu a {
-font-weight: bold;
-color: #ff7f11;
-text-decoration: none;
-margin-left: 1rem;
-border: 2px solid transparent;
-padding: 0.25rem 0.5rem;
-border-radius: 4px;
-transition: all 0.2s ease;
-}
-
-.terminal-menu a:hover {
-border: 2px solid #ff7f11;
-background-color: #fff;
-}
+  /* Base layout styling */
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Fira Code", monospace;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar layout */
+  .terminal-nav {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--accent);
+    padding: 0.75rem 0;
+  }
+  
+  .terminal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+  
+  .terminal-logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .terminal-logo img {
+    height: 1.1rem;
+    margin-right: 0.5rem;
+    border: none;
+  }
+  
+  .terminal-nav-right a {
+    margin-left: 1.25rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .terminal-nav-right a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Homepage layout */
+  .homepage-content {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .homepage-buttons {
+    margin: 1.5rem 0 2rem;
+  }
+  
+  .homepage-buttons .btn {
+    margin: 0.25rem;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .homepage-buttons .btn:hover {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--foreground);
+  }
+  
+  .post-list-wrapper {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .post-list {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .post-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .post-list li::marker {
+    color: var(--accent);
+  }
+  
+  .post-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .post-list a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  
