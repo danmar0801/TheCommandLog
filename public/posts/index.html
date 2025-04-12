@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <title>Posts | The Otter Journal</title>
 
-  <!-- Stylesheets -->
+  
   <link rel="stylesheet" href="/css/terminal.css" />
   <link rel="stylesheet" href="/css/custom.css" />
 </head>
 <body class="terminal">
 
-  <!-- 🧭 Custom Navbar -->
+  
   <div class="terminal-nav">
     <div class="terminal-container">
       <div class="terminal-nav-left">
         <span class="terminal-logo">
           <img src="/images/favicon.png" alt="Logo" />
-          {{ .Site.Title }}
+          The Otter Journal
         </span>
       </div>
       <div class="terminal-nav-right">
@@ -27,9 +27,26 @@
     </div>
   </div>
 
-  <!-- 📄 Main Content -->
+  
   <main style="padding: 2rem 1rem; max-width: 900px; margin: auto;">
-    {{ block "main" . }}{{ end }}
+    
+  <section class="posts-page">
+    <h1>All Posts</h1>
+    <ul class="post-list">
+      
+        <li>
+          <a href="/posts/test/">Test Post</a>
+          <span class="post-date">Apr 11, 2025</span>
+        </li>
+      
+        <li>
+          <a href="/posts/second-post/">Second Post</a>
+          <span class="post-date">Apr 11, 2025</span>
+        </li>
+      
+    </ul>
+  </section>
+
   </main>
 
 </body>
