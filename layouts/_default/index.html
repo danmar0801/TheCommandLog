@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <section class="terminal-card">
+    <h1>Welcome to My Blog</h1>
+
+    <!-- 👋 Intro text -->
+    <p>Hello! I'm a developer who loves clean code, terminal vibes, and building cool projects. Check out my work and get in touch below!</p>
+
+    <!-- 🔗 Buttons -->
+    <div style="margin-top: 1rem;">
+      <a class="btn" href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/yourusername" target="_blank">🔗 LinkedIn</a>
+      <a class="btn" href="https://yourusername.github.io/resume.pdf" target="_blank">📄 Resume</a>
+    </div>
+
+    <!-- 📝 Blog preview -->
+    <h2 style="margin-top: 2rem;">Latest Posts</h2>
+    <ul>
+      {{ range .Site.RegularPages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

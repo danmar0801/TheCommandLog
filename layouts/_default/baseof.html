@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Title }}</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/terminal.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
+</head>
+<body class="terminal">
+
+  <!-- 🧭 Custom Navbar -->
+  <div class="terminal-nav">
+    <header class="terminal-logo">
+      <img src="/images/og-image.png" alt="Logo" style="height: 1.5rem; vertical-align: middle; margin-right: 0.5rem;" />
+      {{ .Site.Title }}
+    </header>
+    <nav class="terminal-menu">
+      <a href="/">Home</a>
+      <a href="/posts/">Posts</a>
+    </nav>
+  </div>
+
+  <!-- 📄 Main Content -->
+  <main style="padding-left: 2rem; padding-right: 2rem; max-width: 900px; margin: auto;">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+</body>
+</html>
