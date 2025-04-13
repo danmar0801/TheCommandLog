@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://danmar0801.github.io/TheCommandLog/posts/test/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://danmar0801.github.io/TheCommandLog/posts/</loc>
-    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-12T21:31:24-07:00</lastmod>
   </url><url>
     <loc>https://danmar0801.github.io/TheCommandLog/</loc>
+    <lastmod>2025-04-12T21:31:24-07:00</lastmod>
+  </url><url>
+    <loc>https://danmar0801.github.io/TheCommandLog/posts/my-post-title/</loc>
+    <lastmod>2025-04-12T21:31:24-07:00</lastmod>
+  </url><url>
+    <loc>https://danmar0801.github.io/TheCommandLog/posts/test/</loc>
     <lastmod>2025-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://danmar0801.github.io/TheCommandLog/categories/</loc>
